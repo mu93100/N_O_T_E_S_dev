@@ -1,0 +1,82 @@
+TESTS UNITAIRES 
+mkdir testsUnitaires // création dossier
+touch index.html script.js style.css dockerfile script.test.js // création fichier
+ls
+git init  // création repository
+npm install jest --save-dev    
+code .
+:: on ecrit le html ETC
+sur GitHub
+creation du repository + copie de l'url
+git remote add origin <adresse URL repo>
+git remote -v (on a comme réponse : 
+	origin <adresse URL repo> (fetch) :: aller chercher 
+	origin <adresse URL repo> (push)  :: envoyer
+=> c'est OK repo et dossier sur ordi connectés
+
+git status (fichiers dockerfile index ETC en rouge car pas commit)
+git add . OU git add index.html script.js style.css dockerfile script.test.js
+git commit -m "initialize project"
+git status (Nothing to commit)
+git log (pour voir les commits)
+git push
+git chekout -b main (SI PROBLEME de branche pas main => ça switc sur new branch main)
+git branch ( pour voir les diff. branchescommande git branch sert à créer, à répertorier, à renommer et à supprimer des branches. En revanche, elle ne permet pas de basculer entre les branches ou de reconstituer un historique forké.)
+git push --set-upstream origin main :: ça push correctement le projet
+
+test unitaires en jsest
+ds fichier test.js 
+const {X=nom de la fonction qu'on IMPORTE} = require ("./script.js")
+pour importer on doit exporter la Fo
+> ds fichier script.js (console.log(appel du script.js);   // pour vérif ds console navigateur  + FONCTION)
+module.exports = {X=nom de la fonction qu'on EXPORTE} 
+
+
+ds fichier test.js 
+après const
+describe ("description de la chose testée", () =>{
+beforeEach()=>
+
+it
+}
+
+code terminal 
+npm init : pour créer le package.json
+
+
+TESTS UNITAIRES 12/06
+describe("nom du test, function() {
+1 it() OU test() === 1 test
+2 it() OU test() === 1 test
+})
+
+terminal 
+> npm install jest-environment-jsdom pour installer + de choses ds package.json + remplacer "test" ds "script" par  
+"scripts": {
+    "test": "npx jest --env=jsdom"
+  },
+
+ npm run test
+
+
+COMMITs après tests 
+VERBE + nom du fichier + ce qu'on a fait
+refactor (refonte améliorer)
+fix (réparer)
+create edit delete
+use
+
+
+sur terminal bash
+on peut tomber sur vim et nano par hasard ou W que sur term
+VIM on peut écrire sur ts les fichiers
+ex : vim package.json
+i pour insérer un truc
+o pour insérer en sautant une ligne et avec inde
+echap pour quitter une Fonalité
+:q pour quitter sans sauvegarder
+:w pour sauvegarder 
+:x pour sauvegarder et quitter
+:q! pour forcer à quitter
+
+NANO : avec CTRL

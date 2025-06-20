@@ -1,0 +1,17 @@
+Fonction PRG 16/04
+header location
+exit --> redirection
+un code de redirection vers une page après envoi d'un formulaire pour éviter les contenus dupliqués
+une fois qu'on a rempli le formulaire (ex inscription) celui-ci ne nous est plus proposé 
+
+REGEX ::: expression régulière en PHP
+$url = "https://www.zenndevs.xyz/";
+if (preg_match('/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*)+):?(d+)?\/?/i', $url)) {
+    echo "Your url is ok.";
+} else {
+    echo "Wrong url.";
+}
+
+contraintes rajoutées à l'entrée d'infos ds un formulaire
+
+https://www.orixa-media.com/academie/referencement-naturel/technique/entetes-http/

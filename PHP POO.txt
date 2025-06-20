@@ -1,0 +1,105 @@
+déployer un site
+sur OVH on doit choisir pour backend si on W en php ou not JS. après valable POUR TOUS LES SITES sinon on doit reprendre une option
+avec file zilla
+
+dockers : crée une config pc pareille pour tt le monde qui W à un projet
+
+Avec plaisir ! Les getters (get) et setters (set) sont des méthodes en programmation orientée objet (POO) qui permettent d’accéder ou de modifier les propriétés d’un objet de manière contrôlée.
+
+🔒 Pourquoi les utiliser ?
+Imaginons que tu as une propriété privée comme ça :
+
+php
+Copier le code
+class Personne {
+    private $nom;
+}
+Comme $nom est privée, on ne peut pas y accéder directement depuis l’extérieur de la classe. D’où l’intérêt de :
+
+getNom() → pour lire la valeur
+
+setNom($valeur) → pour modifier la valeur
+
+🧠 Exemple simple en PHP :
+php
+Copier le code
+class Personne {
+    private $nom;
+
+    public function getNom() {
+        return $this->nom;
+    }
+
+    public function setNom($nouveauNom) {
+        $this->nom = $nouveauNom;
+    }
+}
+🧪 Utilisation :
+php
+Copier le code
+$p = new Personne();
+$p->setNom("Alice");
+echo $p->getNom(); // Affiche : Alice
+✅ Avantages des getters/setters :
+Sécurité : tu peux contrôler ce qu’on met ou récupère.
+
+Validation : tu peux vérifier les données avant de les accepter.
+
+Flexibilité : tu peux changer l’implémentation interne plus tard sans casser le code qui utilise la classe.
+
+🎯 Exemple avec validation :
+php
+Copier le code
+public function setNom($nouveauNom) {
+    if (strlen($nouveauNom) > 0) {
+        $this->nom = $nouveauNom;
+    } else {
+        echo "Nom invalide";
+    }
+}
+GET SET
+Qd on pose les get et set avec $var=$a déclarée
+getVar() avec return $this->var MAIS setVar($a) avec return $this->var=$a
+Qd on appelle les getter et setter
+GET ::: pas de paramètre car on a déclaré des var avant PAS DE MODIFICATIONS/ vérif juste appeler une variable PAS DE IF
+SET ::: modifier la donnée => on rajoute un/ des paramètres DES VERIFS / IF donc on peut appeler la Fo directement ds Fo __construct ($this-> setMachin($a) )
+
+avec GET et SET mettre return si on doit afficher la val.
+
+boolean : par défaut c'est true
+
+{} avec "" et non '' pour ex:echo "le livre {$this->getTitre()} est à nouveau dispo";
+
+public
+private -->SANS GETTER (ET SETTER) on ne peut pas récupérer la var ===on ne peut pas faire echo $classe1->var; CA FAIT FATAL ERROR
+class Classe{private $var} 
+$classe1 = new Classe 
+
+EX :: ?? explications mu ??
+class Produit{ 				//objet Produit
+    private string $nom;	// $nom attribut/propriété
+    private int $stock;	
+    private float $prix;
+
+    public function __construct(string $a, int $b, float $c) // (string $a, int $b, float $c) == paramètres
+    {
+        $this->nom = $a;    // $this instanciationde Produit ==Nx nom
+        $this->stock = $b;
+        $this->prix = $c;
+    }
+
+round (résultat, chiffre)-->arrondir (résultat) à (chiffre) après la virgule
+
+
+ 	  /\
+	 /  \
+	/    \
+ ____
+
+ds VScode  > menu pricipal >sélection>mode selection colonne et ça fait cô ctrl ALT + fleches >>> pour sélection +sieurs lignes
+
+Utilisez include() lorsque le fichier n'est pas essentiel, comme un élément de modèle. Utilisez require() lorsque le fichier est vital, comme un fichier de configuration. Utilisez include_once() ou require_once() pour garantir qu'un fichier n'est inclus qu'une seule fois, comme une définition de classe 
+
+QUAND çA NE MARCHE PAS ET PAS D4EXPLICATIONS ::: noms des class peut ^tre ds un dossier pas loin et ça bloque
+
+

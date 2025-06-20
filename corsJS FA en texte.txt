@@ -1,0 +1,940 @@
+corsJS FA en texte
+BOUCLES
+/*-------------les boucles
+
+une boucle permet d'exécuter un bloc de code +sieurs fois, tant que la cond est vrai
+
+les boucles sont utilisées pour parcourir des tableaux, répéter des actions et automatiser des tâches
+
+boucle WHILE : tant que
+cette boucle est très utilisée qd on ne connait pas le nb de tours de boucles à l'avance      ---*/
+
+let j=1;
+
+while(j<=10){// tant que j n'est pas arrivé à 10 la boucle continue
+    //--> tant que j est < ou = à 1
+    document.write("<h1 style='color:blue'> je passe par ici "+j+" </h1>");
+    j++;
+    document.write("<h2>je passe par là "+j+"</h2>");
+} // document.write: on demande à ce que ça écrive dans le doc
+
+// voir propriétés des val html
+
+
+// ---------pour message d'erreur et la fentre nous est reproposée---------
+let maxAge=25 
+let age=NaN; //NaN = not a number
+// initialisation avec une valeur invalide "not a number" 
+// --> l'erreur qui occasione la boucle ser un age en string donc un NaN
+console.log(typeof age)
+
+while (isNaN(age)){
+    age=Number(prompt("indiquez votre age"))
+    if(isNaN(age)){
+        alert("erreur : veuillez ecrire un nb")
+    }
+}
+console.log(age)
+if(age<maxAge){
+    alert("au revoir")
+}
+else{
+    alert("bienvenue")
+}
+
+//  -------boucle FOR -------------------------
+// for a besoin de 3 arguments
+
+for(let i=1; i<=10; i++){
+    document.write("<h3 style='color: aquamarine'>una passagiata "+i+"</h3>")
+}
+
+// parcourir un tableau - []--> on est dans un tableau [0]-->on va à l'index 0 (1.2.3 etc)
+let fruits=["pomme", "banane", "cerise"]
+console.log(fruits[0]) 
+
+for(let i=0; i<fruits.length;i++){//i<fruits.length = i inf. à long. de fruits
+    console.log("fruits :", fruits[i])}
+
+    const numbers =[10, 20, 30]
+        console.log(numbers)
+    // dans console : array =tableau
+
+    const products=[
+        {name:"smartphone", price : 500},
+        {name:"ordinateur", price : 800},
+        {name:"casque", price: 100}
+    ]
+    let html=""; //on initialise une var vide
+    for(let i=0;i<products.length;i++){   // à chaque iteration on ajoute ( +=) une Nlle div avec produit correspondant
+        html += `<div class="product"> 
+        <h3> ${products[i].name}</h3>
+        <p> prix : ${products[i].price} £</p>
+        </div>`
+    }
+    // après la boucle html contient maintenant TOUT le code HTML généré
+    let productList=document.getElementById ('product-list')
+    productList.innerHTML=html
+
+COMPARAISONS
+//        comparaisons == === != !==  TOUJOURS pour 2 var
+
+// assignation = : utilisé pour assigner une val
+
+// let nb1=123 // number
+// let nb2="123" // string
+// console.log(nb1, nb2)
+// //l'opérateur de comparaisons == signifie "egal à"
+// // mais se fout des types (number ou string au choix)
+// console.log("== fait quoi", nb1==nb2)
+// //l'opérateur de comparaisons === signifie " STRICTEMENT egal à"
+// // en types ET en val
+// console.log("== fait quoi", nb1===nb2)
+
+//l'opérateur != signifie "diff. de", en valeur
+console.log("== fait quoi", nb1 != nb2)
+//l'opérateur !== signifie "STRICTEMENT diff. de", en valeur et type
+console.log("== fait quoi", nb1 !== nb2)
+
+
+//exe =
+let prenom="Nassuf"
+// si prénom renseigné dans le prompt est = à let prenom --> alert disant bonjour
+// sinon alert disant au revoir
+//METTRE PROMPT DANS UNE VARIABLE 
+// SINON BORDEL SI CODE +IMPORTANT AVEC +SIEURS PROMPT
+let loginPrenom=prompt("quel est ton prénom ?")
+let resulPrompt=loginPrenom.charAt(0).toUpperCase()+loginPrenom.slice(1)
+
+if (resulPrompt===loginPrenom){
+    alert("bonjour")
+}
+// else{
+//     alert("au revoir")
+// }
+if (resulPrompt !==loginPrenom){
+    alert("au revoir")
+}
+
+OPERATEUR LOGIQUE
+// opérateurs logiques
+
+// && = et
+// || = ou
+// ! le contraire
+
+let prenom
+let loginPrenom
+let age
+let loginAge
+
+// /ex: si prenom===loginPrenom ET age===loginAge
+
+if(prenom===loginPrenom) && (age===loginAge) {
+    // si ces 2 cond. sont remplies alors le code ICI s'execute
+}
+
+// on peut écrire sans les ()
+if prenom===loginPrenom && age===loginAge
+
+if (a && b) --> si a et b en meme temps uniquement
+
+
+if (a || b) --> si a OU b
+
+let UserIsLogin=true
+if (!userIs Login){// est diff de true
+// si user nest pas connecte si UserIsLoginest false
+}
+// ce qui reveint à écrire
+if(UserIsLogin===false){
+// si user n'est pas connecté, si userIsLogin est false
+}
+CONCATENATION
+// alert("bonjour lundi")
+
+// --------concaténer : mettre bout a bout au moins 2 chaines de caractères--------------------------
+let annee=2024, mois=12, semaine=7;
+console.log (mois, annee, semaine);
+// ou
+let year, month, week
+year=2025       /*int ou number*/
+month="février"  /* string */
+week="lundi"    /* string */
+
+console.log ("const de annee :", annee)
+console.log ("type de const de annee :", typeof annee)
+
+// add de 2 numbers
+const resultat=annee + mois
+
+//si il y a 1 number et 1 string, les 2 VAR sont côte à côte
+const resultat02= year + month
+console.log("resultat de year et month", resultat02)
+
+console.log(resultat)
+console.log(typeof resultat02) //= 2025février en string
+
+const debutPhrase="lundi";
+const suiteDePhrase= "est une journée";
+const finDePhrase="magnifique";
+
+const resultat_phrase= debutPhrase +" " +suiteDePhrase + " " + finDePhrase;
+console.log("le résultat de la phrase : ", resultat_phrase)
+
+const resultat_phrase2=`${suiteDePhrase}${" "}${finDePhrase}${" "}${debutPhrase}`
+console.log("résultat de la phrase avec $ est :",resultat_phrase2);
+
+document.write("<h1>" + resultat_phrase + "</h1>")
+
+// exercice : concatener ces ' var dans une nouvelle var 
+// et afficher cette Nelle var ds un console log
+const partiel="Nous sommes le"  //string
+const partie2=10                //int ou number
+const partie3="du mois de"
+const partie4="février"
+
+//-->// 
+const resultat_exercice = partiel + " "+ partie2 +" " + partie3 + " " + partie4;
+console.log("phrase exercice :", resultat_exercice)
+document.write("<h2>" + resultat_exercice + "</h2>")
+
+const h2= document .querySelector(".essai_h2")
+h2.innerHTML=resultat_exercice
+
+CONDITIONS
+// /*---------------------
+// les conditions
+// ----------------------*/
+// // en js une cond. permet d'executer un bloc de code 
+// // seulement si certaines cond.sont vraies (TRUE)
+
+// // alert("moussa")
+// nb1= 49
+// if(nb1<50){
+//     //pae défaut la cond vérifie si le code entre () est vrai 
+//     // si le code entre () est vrai, le code entre {} s'execute
+//     alert("je suis inférieur à 50")
+// }
+
+// if(true){
+//     //si la condition est vraie, le code s'exécute
+// }else{
+//     //si la cond. est fausse, c'est ce code qui s'exécute/ SINON
+// }
+
+// //exemple
+// let nb2=51
+// if(nb2<50){
+//     alert("nb2 est inférieur à 50")
+// }else{
+//     alert("nb2 est supérieur à 50")
+// }
+
+// let nb3=47
+// if(nb2<50){
+//     alert("333 est inférieur à 50")
+// }else{
+//     alert("333 est inférieur à 50")
+// }
+
+// let nb4=50 /* inf. sup. ou égal */
+// if(nb4<=50){
+//     alert("nb4 est inférieur ou égal à 50")
+// }else{
+//     alert("nb4 est inférieur ou égal à 50")
+// }
+// let nb5=60
+// if(nb4>=60){
+//     alert("nb5 est inférieur ou égal à 60")
+// }else{
+//     alert("nb5 est inférieur ou égal à 60")
+// }
+
+//exercice
+
+// // console.log(prompt("quel est ton age ?")); // une fenetre quel est ton age? s'ouvre dans console 
+// let maxAge=25 // important de donner une val à maxAge si utilisé plusieurs fois (et non pas mettre 25)
+// let age= Number(prompt ("quel est ton age2"))// let age=prompt("quel est ton age ?") 
+// //// on stocke les données obtenues par prompt, dans age
+// // là age est en string -
+// console.log("let age a comme valeur : ", age)
+// console.log("et son typeOf est : ", typeof age) //on peut écrire aussi console.log("let age a comme valeur : ", "et son typeOf est : ", typeOf age)
+
+
+// // on va utiliser les conditions pour vérif l'age du user
+// // si il a + de 25 ans on lui souhaite bienvenue dans la console
+// // sinon on lui dit au revoir dans la console
+
+// if(age>=maxAge){
+//     console.log("bienvenue dans la console")
+// }
+// else{
+//     console.log("au revoir ")
+// }
+// //isNaN = fonction  si (age) n'est pas un number
+
+// if (isNaN(age)){
+//     alert("* * * erreur * * * données invalides * * * écrire un numéro * * * ")
+//     age=Number(prompt("redonne ton age en chiffre STP "))
+//     // prompt("redonne ton age en chiffre STP ")
+// }
+// else if(age<=maxAge){
+//     alert ("au revoir ")
+// }
+// else{
+//     alert ("bienvenue")
+// }
+// * * * * VOIR COMMENT FAIRE POUR POUVOIR RENSEIGNER DE NOUVEAU L4AGE AVEC OK /PAS OK
+
+
+// switch
+// l'instruction SWITCH est utilisé pour remplacer une serie de cond. 
+// "if else else if" lorsque l'on doit comparer une valeur à +sieurs cas possibles
+
+const jour="jeudi" //il faut changer le jour pour voir ce que ça fait ds console.log
+switch(jour){
+    case"lundi":
+        console.log("début de semaine")
+        break // pour terminer une boucle
+    case "mardi":
+    case "mercredi":
+        console.log("milieu de semaine")
+        break
+    case "jeudi":
+    case "vendredi":
+        console.log("fin de semaine")
+        break
+    case "samedi":
+    case "dimanche":
+        console.log("we")
+        break
+    default:
+        console.log("défault")
+}
+
+FONCTIONS
+
+// LES FONCTIONS
+
+
+// une Fo en js est un bloc de code réutilisable qui exécute une tâche spécifique
+// elle peut recevoir des paramètres, effectuer des opé et retourner un résultat
+
+// on peut déclarer une Fo en utilisant les mots clés "function"
+
+// function direBonjour(){
+//     console.log("hello")
+// }  
+// //  direBonjour est une Fo qui affiche hello ds la console
+// // pour exécuter cette Fo on doit l'appeler, NE PAS OUBLIER les ()
+// direBonjour() // on appelle la Fo hello s'affiche sur console
+
+// function consol(message){
+//     console.log(message)// on met un paramètre message on choisit le nom
+// }
+// consol("j'ecris V R A I M E N T n'importe quoi")
+
+
+// let b=12
+// let a= "mommy"
+// consol(typeof b)
+// consol(typeof a)
+
+
+// let c=3
+// let d=4
+// //Fo pour * par 2 c et d
+
+// function multi2 (n){
+//     return n * 2 //return : pour qu'il donne le résultat
+// }
+// consol(multi2(c))
+// consol(multi2(d))
+
+// //écrire Fo réutilisable avec parametre qui ecrit un texte dans DOM avec write
+// let text="je suis le texte"
+// let text2="je suis le second texte"
+
+// function textDom(phrase){
+//     document.write("<p style='color:aquamarine'>" + phrase + "</p>")
+// }
+// textDom(text)
+// textDom(text2) 
+
+// Fo avec return : une Fo peut retourner une val avec return
+function add(a,b){
+    return a+b
+}
+console.log(add(5,2));
+
+// on peut utiliser une Fo en changeant uniquement 1 paramètre (params) 
+//  function name(params) {
+//     tableau_défini.pop(params)  
+// }
+// on peut utiliser une Fo en changeant de tableau ET 1 paramètre (params) 
+// --> on met 2 parametres
+// // function name(tab,params) {
+//     tab.pop(params)  
+// }
+
+
+// fonctions_utilitaires.js ?????
+
+// function consol(message){
+//     console.log(message)// on met un paramètre message on choisit le nom
+
+INCREMENTATION
+/*----------------
+incrémentation
+---------------*/
+
+// alert("tatatat")
+
+// incrementation = action d'aug. la valeur d'une var, généralement de 1
+//  utilisé dans les boucles
+
+let nb1=1
+console.log ("nb1 : ", nb1)
+
+console.log("incrementation de nb1", nb1+=1) // ou nb1=nb1+1 --> sur console : 2
+// console.log("incrementation de nb1.2", nb1+=1) // ou nb1=nb1+1 --> sur console : 3
+// console.log("incrementation de nb1.3", nb1+=1) // ou nb1=nb1+1 --> sur console : 4
+// console.log("incrementation de nb1.4", nb1+=1) // ou nb1=nb1+1 --> sur console : 5
+
+console.log("incrémente puis retourne la Nlle val", ++nb1) // incrémente puis retourne la Nlle val
+console.log("retourne l'ancienne val PUIS incrémente", nb1++) // retourne l'ancienne val PUIS incrémente SI ON RAJOUTE UN console.log(nb1) APRES
+console.log(nb1)
+
+console.log(nb1+=2)
+
+
+//décrémentation
+console.log(nb1=nb1-1)
+console.log("décrémentation",nb1=nb1-1)
+console.log(--nb1)
+console.log(nb1)
+console.log(nb1-=2)
+
+MANIP DOM
+/*---------------------------
+manip du Dom
+-----------------------------
+
+1. sélectionner des éléments et les mettre ds une variable/ (déclarer une variable ?)-------------*/
+
+// let titre=document.getElementById("titre") //selectionner une ID
+// let paragraphe=document.getElementsByTagName("p") // sélectionner une balise
+// let elementClass=document.getElementsByClassName("ma-classe")
+
+// let premierParagraphe=document.querySelector("p")
+// let premierParagraphe=document.querySelector("#monId")
+// let allParagraphe=document.querySelectorAll
+
+const titre=document.getElementById("titre")// selectionner un ID
+const paragraphe=document.getElementsByTagName("p") // selectionner une balise
+const elementClass= document.getElementsByClassName ("ma-classe") // selectionne la premiere class qu'il trouve avec ce nom
+const premierParagraphe=document.querySelector("p")// selectionne le 1er paragraphe
+const unId=document.querySelector("#monId")// selectionne id
+const uneClass=document.querySelector(".uneClass") //selectione une classe
+const allParagraphe=document.querySelectorAll("p") //selectione tous les paragraphes
+const toutesLesClass=document.querySelectorAll(".ma-classe") // selectionne tous les class ma-classe
+
+
+// 2. modif du contenu
+let titre1=document.getElementById("titre1")// selectionner un ID
+let titre2=document.getElementById("titre2")// selectionner un ID
+
+if(titre1){
+    titre1.innerHTML="<span>ajout depuis js T I T R E </span>" //ajout dans html
+}
+if(titre2){
+    titre2.textContent="CHANGER LE titre" // change le texte du titre
+}
+
+// 3. modif de style
+let titre3=document.getElementById("titre3")// selectionner un ID
+if (titre3) {
+    titre3.style.color="tomato"
+    titre3.style.fontSize="50px"
+    titre3.style.padding="10px"
+}
+
+// 4. gestion de class en CSS /// voir exo france W
+// let titre=document.querySelector(".titre")
+// classList avec element titre --> on donne acces à des classes qui vont etre rattachées 
+// à element titre (ajoutées add/ enlevées remove/ ajoutées enlevées toggle)
+// il faut créer la class .ajout-de-class .supp-ma-class ETC ds <style>CSS
+// titre.classList.add("ajout-de-class") // ajoute une class à un element du dom
+// titre.classList.remove("supp-ma-class") // supp une class 
+// titre.classList.toggle("ma-class") // ajoute une class si absente, ou supp la class si présente
+
+// 5. création et insertion
+const newParagraphe=document.createElement("p")  // creation d'une balise p 
+// // TOUJOURS création de l'élément en 1er
+
+newParagraphe.textContent="ceci est un Nx paragraphe ajouté par js"
+text.appendChild(newParagraphe) // créer un élément enfant
+newParagraphe.style.color="red"
+newParagraphe.classList.add("ajout-class-js")
+
+// sélectionner id text2 ds fichier html et le mettre ds une variable
+let text2=document.querySelector("#text2")
+// créer un h1 en ajoutant un titre: "titre2" qui sera l"enfant de text2
+let enfantText2=document.createElement("h1")
+enfantText2.textContent="titre2 de text2"
+text2.appendChild(enfantText2)
+// ajouter une class à text2 et modifier son css via la balise style ds fichier css
+text2.classList.add("ajout-class-text2")
+
+
+
+// 6. évènement javascript
+// les evènements en js permettent ,d'intéragir avec les actions click, saisie, défilement)
+// click : qd un element est clické
+// mouseover : qd la souris passe sur un element
+// scroll : qd on défile sur la page
+// keydown : quand on touche une touche du clavier
+let button_essai=document.querySelector(".button_essai")
+
+// tout ce qui est après Fo est  I N V E N T é, ce ne sont pas des Fo natives 
+function alertClick() {
+    alert ("t'as qu'à t'en fouttre")
+}
+function colorChange() {
+    button_essai.style.background="green" 
+    }
+
+//------------autre façon de faire :::
+let button_essai2=document.querySelector (".button_essai2");
+// console.log(button_essai2);
+button_essai2.addEventListener("mouseover",()=>{  // ATTENTION -->mouseover, click veulent dire qqie chose / pas inventés
+    button_essai2.style.background="black"
+    button_essai2.style.color= "white"
+})
+let text3=document.querySelector("#text3")
+text3.addEventListener("click", function() {
+    text3.textContent="ciao"
+    text3.style.background="tomato"
+})
+//---------carré blue
+let carreB=document.querySelector(".carreB")
+carreB.addEventListener("click",()=>{
+    carreB.style.width="5rem";
+    carreB.style.height="5rem";
+    if(carreB.style.width="5rem"){
+        carreB.style.transform="scale(1) 1000ms";
+    }
+})
+
+// carreB.addEventListener("click",()=>{
+//     carreB.style.width="5rem";
+//     carreB.style.height="5rem";
+// })
+
+//---------carré TOMATO
+let carreT=document.querySelector(".carreT")
+    carreT.addEventListener("mouseover",()=>{
+    carreT.style.transform="scale(5)";
+})
+    carreT.addEventListener("mouseout",()=>{
+    carreT.style.transform="scale(1)";
+})
+//// -------------M O D A L
+let buttonModal=document.querySelector ("#buttonModal")
+let modal=document.querySelector (".modal")
+
+buttonModal.addEventListener("click", function () {
+    // modal.style.display="block"
+    buttonModal.style.display="none";
+    modal.classList.toggle ("blokkk") 
+    buttonFERmodal.style.display="block"
+})
+buttonFERmodal.addEventListener("click", function () {
+    // modal.style.display="block"
+    buttonModal.style.display="block"; // avec style le "block" n'est pas inventé
+    modal.classList.toggle ("blokkk") 
+    buttonFERmodal.style.display="none"
+})
+
+//  -----------textChange modif le texte qd on click dessus
+// let buttonTextChange=document.querySelector("buttonTextChange") //  querySelector ou getElementsByClassName (ou getElementsById)
+// let textChange=document.getElementsByClassName("textChange")
+// buttonTextChange.addEventListener("click", function() {
+//     textChange.textContent="T E X Tqui a changé, l'idiot"
+// } )
+
+/**
+ * 
+ * 
+* Exercice 2 : Détecter le survol d'un élément et modifier son style
+*/
+
+/*-------------ex3 liste----
+* Exercice 3 : Ajouter un nouvel élément à une liste <ul>  <li></li> </ul> au clic sur un bouton
+* utiliser creatElement "li" et appenChild
+*/
+// let list=document.getElementsByClassName("liste") // avec getElementsByClassName 
+// // let newLi
+// console.log(list);
+
+
+
+/*------------------Exercice 4 : 
+creer une liste de noms depuis une variable utilisateur contenant un tableau 
+la mettre dans une div du dom
+*
+* pour cela creer une bloucle for qui boucle sur le tableau
+* ajouter createElement "li" et
+* ajouter un textContent a "li" qui sera le i (index) de utilisateur
+*
+* creer une fonction au click affichant une alert quand un nom de la liste du tableau
+est cliqué.
+* dans alert " vous avez cliqué sur + "nom de l'utlisateur cliqué" "
+*/
+
+let users=["alice", "claude", "roro", "fafa"]
+let ulEx4Users=document.querySelector(".ulEx4Users")
+    // i       index 0     1       2       3
+console.log(users);
+
+for(let i=0;i<users.lenght;i++){
+    let li=document.createElement("li")
+    li.textContent=users[i]
+    ulEx4Users.appendChild(li)
+
+    console.log("li", li.textContent)
+    console.log("console log de user i :", users[i])
+    li.addEventListener("click", function () {
+        alert("vous avez cliqué sur" + users[i])
+        
+    })
+}
+
+
+// console.log(users);
+// for (let i=0 i<array.lengtht i++) {
+//     let usersLi=document.createElement("Li");
+    
+// }
+
+// for
+
+
+
+// text.appendChild(newParagraphe) // créer un élément enfant
+// newParagraphe.style.color="red"
+// newParagraphe.classList.add("ajout-class-js")
+
+
+//-------boucle FOR -------------------------
+// for a besoin de 3 arguments
+
+// for(let i=1; i<=10; i++){
+//     document.write("<h3 style='color: aquamarine'>una passagiata "+i+"</h3>")
+// }
+
+// // parcourir un tableau - []--> on est dans un tableau [0]-->on va à l'index 0 (1.2.3 etc)
+// let fruits=["pomme", "banane", "cerise"]
+// console.log(fruits[0]) 
+
+// for(let i=0; i<fruits.length;i++){//i<fruits.length = i inf. à long. de fruits
+//     consolelog("fruits :", fruits[i])}
+//     console.log(numbers)
+
+//     const numbers =[10, 20, 30]
+//         console.log(numbers)
+//     //dans console : array =tableau
+
+// const products=[
+//     {name:"smartphone", price : 500},
+//     {name:"ordinateur", price : 800},
+//     {name:"casque", price: 100}
+// ]
+// let html=""; //on initialise une var vide
+// for(let i=0;i<products.length;i++){   // à chaque iteration on ajoute ( +=) une Nlle div avec produit correspondant
+//     html += `<div class="product"> 
+//     <h3> ${products[i].name}</h3>
+//     <p> prix : ${products[i].price} £</p>
+//     </div>`
+// }
+// // après la boucle html contient maintenat TOUT le code HTML généré
+// let productList=document.getElementById ('product-list')
+// productList.innerHTML=html
+// ${} pour insérer des  var directement dans des chaines de caractères
+
+ // += est égal à ça + ...//
+//  const product est un tableau
+//  on appelle l'index , 1, 2 , 3
+//  la clé c'est name
+//  la valeur c'est smartphone
+// $ =interpolation comme concaténation //
+
+OPERATEURS
+/*---------------
+les OPERATEURS : que les opérations
+---------------*/
+
+//je déclare mes var
+let nb1, nb2, resultat
+
+//j'affecte des valeurs
+nb1 = 10
+nb2 = 5
+nb3 = 3
+
+//j'utilise une var avec un calcul
+
+// ADDITION
+resultat = nb1 + nb2
+console.log("voir le résultat add : ", resultat)
+
+// SOUSTRACTION
+resultat = nb1 - nb2
+console.log("voir le résultat souss : ", resultat)
+
+// MULTIPLICATION
+resultat = nb1 * nb2
+console.log("voir le résultat multipl : ", resultat)
+
+// DIVISION
+resultat = nb1 / nb2
+console.log("voir le résultat division : ", resultat)
+
+// MODULO --> RESTE DE LA DIVISION / pour chiffres pairs (let pair= (n%2===0)) 
+// et impairs (let impair= (n%2!==0))
+resultat= nb1%nb3
+console.log("voir le modulo_reste div nb1 par nb3", resultat)
+
+resultat= nb1%nb2
+console.log("voir le modulo_reste div nb1 par nb2", resultat)
+
+console.log("le resultat du modulo de " + nb1 + "par" + nb2 + " est gal à " + resultat)
+
+let chiffre=9
+let chiffre2=4
+resultat= chiffre % chiffre2
+console.log(resultat)
+
+//ecritures simplifiées
+nb1=15
+nb1=nb1+5 /*OU on peut écrire nb1 +=5
+
+SCRIPT
+// alert("bonjour lundi") => ça affiche un mess "ca va pas"  
+
+// syntaxe de base :
+// comm sur 1 ligne
+/* comm sur plusieurs lignes
+   comm sur plusieurs lignes */
+
+// 1- DECLARER UNE VARIABLE
+// 2 variables : let et const / var OBSOLETE
+
+//pour déclarer une var :
+let nom; //nom = nom que l'on donne à la var
+
+
+// 2-ASSIGNER(affecter) UNE VALEUR A UNE VAR
+nom="momo";
+ //let ville="Paris";  on déclare une var et on lui affecte 
+ // une valeur en même tps//
+// avec const qui ne peut pas etre modifié, on fait tjs const variable valeur
+let ville;
+ville="Paris";
+console.log (ville);
+ville="Londres";
+console.log (ville);
+
+//avec  var const --> on doit affecter une valeur sinon ERREUR
+const prenom="Moussa";
+console.log(prenom);
+//prenom="Ousmane" --> erreur
+
+// on ne peut pas changer la valeur à une var const --> une ERREUR s'affichera dans la console
+
+// 3- AFFICHER UNE BOITE DE DIALOGUE
+// alert("je suis une boite de dialogue d'erreur")
+
+// 4-AFFICHER DANS LA CONSOLE AVEC console.log()
+console.log("contante prénom", prenom); 
+// = appeler *contante prénom, la const prenom
+
+
+// - - - - - - - - -  - - - - - - - - - - - - - - 
+// - - - - - - - - - LES TYPES DE VAR- - - - - - - 
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+// 1- LES CHAINES DE CARACTERES string
+// string TJRS entouré de " "
+let vacances="2017"
+let destination="Pantin"
+console.log (vacances);
+console.log (destination);
+
+// 2- LES NB ENTIERS (integer ===int ou number)
+let annee=2017
+console.log (annee);
+
+// 2- LES NB DECIMAUX avec . (float)
+let nombre_a_virgule=5.32;
+
+
+// 4- LES BOOLEENS tru et false
+//un booléen est un type de variable à deux états (généralement notés vrai et faux), 
+//destiné à représenter les valeurs de vérité de la logique et l'algèbre booléenne
+let boolean_false=false;
+let boolean_true=true;
+
+// 5- typeof permet de connaitre le type de la var /4 types : string int(ou number) float boolean
+console.log("année :", annee);
+console.log("typeof de année :", typeof annee);
+
+console.log("booléen :", typeof boolean_false);
+console.log("types de vacnces :", typeof vacances);
+
+console.log(" vacances en int (number) :", parseInt (vacances));
+// parseInt --> pour passer un string en nb ENTIER
+// EX pour récupérer les données renseignées d'un formulaire TJRS en string (chaine de caractères), si on veut utiliser lenb pour un calcul
+
+//string to number----parseInt : pour convertir text en chiffres
+let vacances_number=parseInt(vacances)
+
+//number ou booléen to string - toString : pour convertir chiffres en text
+console.log(" vacances_number to string :", vacances_number.toString());
+console.log(" boolean to string :", boolean_false.toString());
+
+//string to float
+let unChiffre="3.45"
+console.log("string to number :", parseInt (unChiffre)); /*--> ne prend pas la décimale  */
+console.log("string to float :", parseFloat (unChiffre)); /*--> prend la décimale  */
+
+/*base de données ----> backend ----> front end
+pour entrer données ds base de données, le client a besoin d'un back office un peu sympa*/
+
+TABLEAUX
+/*-------------------------
+les tableaux
+
+
+créer un tab   ---*/
+
+// 3 écritures différentes pour tab mais [] c'est ce qu'il y a de mieux
+
+let tab1=new Array("element0", "element1")
+let tab2=Array("element0", "element1")
+let tab3=["element0", "element1"]
+
+// -----------déclaration d'une liste = tab
+
+// tab simple de nb1
+let nombres=[1,2,3,4,5,6]
+
+// tableau de chaine de caractères
+let fruits=["banane","pomme","myrtilles"]
+
+// tab mixte différent de type de données
+let mixte=[42,"hello",true,{nom:"alice"},[1,2,3]]
+//  index   0    1      2        2          4
+// nom:"alice" --->nom=clé ""=valeur
+
+// affichage de tab
+console.log("nombres :", nombres)
+console.log("fruits :", fruits)
+console.log("mixte :", mixte)
+
+// ----------accéder aux éléments d'un tab
+
+console.log("1er fruit :", fruits[0]); // 3 index 0 1 2 TJRS dans []
+console.log("2eme fruit :", fruits[1])
+console.log("DERNIER fruit :", fruits[fruits.length-1])
+
+console.log("mixte index3:", mixte[3]) // ATTENTION A INDEX 0 
+console.log("mixte index4 rentrer dans tab index1 :", mixte[4][1])
+console.log("mixte index3 rentrer dans objet :", mixte[3].nom) // OU 
+console.log("mixte index3 rentrer dans objet :", mixte[3]["nom"])
+
+// indexOf
+// trouver l'index d'un tab :::
+fruits.indexOf("pomme")
+console.log("trouver l'index",fruits.indexOf("pomme"));
+
+//vider un tab
+let tab70=[1,2,3,4,5]
+tab70.length=0
+console.log("vide le tab",tab70);
+
+// ---------------MODIF DE L'ORIGINAL D'UN TAB 
+// ----------modifier un élément d'un tab
+// pour tableau on peut utiliser const ISO let car on pourra les modifier
+
+fruits[0]="fraise"
+console.log("fruits modifiés", fruits);
+
+// ----------ajouter un élément ds tab
+
+fruits.push("mangue") // s'ajoute à la fin
+console.log("fruits modifiés mangue", fruits);
+
+fruits.unshift("cerise") // s'ajoute en 1er
+console.log("fruits modifiés cerise", fruits);
+
+//////////////////
+
+// !!!! splice (index, 0, "nom") avec zero, on ajoute le "nom" 
+// DIFF : avec 1, on supprime,( et on remplace par "nom" )
+fruits.splice(1,0,"clém") // s'ajoute en 2ème
+fruits.splice(1,1,"clAA") // on supp clem et on remplace par clAA
+console.log("fruits modifiés clem", fruits);
+
+let index=fruits.indexOf("pomme") // pour retrouver un élément, là pomme
+let result=fruits.splice(index,1) //supprimer pomme
+console.log("pomme supprimer", result);
+console.log(fruits); // pomme supprimé
+
+fruits.shift() //ne pas oublier les () SINON 9A NE MARCHE PAS
+console.log("supp 1er element",fruits);
+
+
+//chaines de caractères considérées aussi cô des tab
+// log splice unshift push ETC : Fo  
+fruits.pop() //supp dernier element
+console.log(fruits);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+
+
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+// ---------------MODIF EN CREANT UN NX TAB =UNE COPIE DU TAB
+// ----------extraire une partie du tab SANS modif l'original
+let nouveauxFruits= fruits.slice (1.1)
+console.log("Nx tab", nouveauxFruits);
+
+// Fo pour filtrer des elements du tab - ici tt ce qui est <18
+let ages=[12,21,55,66,13,19,18]
+let resultat=ages.filter(
+    function checkAdult(parametre) {
+        return parametre >=18;
+    }
+)
+console.log("Nx tab age >18", resultat); 
+console.log("tab age n'est pas modifié",ages);

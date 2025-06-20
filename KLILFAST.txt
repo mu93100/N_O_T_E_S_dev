@@ -1,0 +1,46 @@
+KLILFAST
+SUR git hub
+>setting
+>pages
+> on choisit la branche ds source select branch > master
+
+adresse repo github   https://github.com/mu93100/klikFast/settings/pages
+lien pour site pour autres pers   https://mu93100.github.io/klikFast   
+ http://username.github.io/repository.
+https://pages.github.com/ cliquer sur >project site
+> start from scratch
+
+on va ds action on tape docker ds workflow et on télécharge docker-image
+
+KLIKFAST
+pour créer dockerfile
+on a demandé à perplexity
+
+Étapes pour Dockeriser un projet JavaScript/HTML/CSS simple
+Pour envelopper votre projet (par exemple, une page HTML avec un script.js) dans un conteneur Docker et le lancer, vous pouvez utiliser un serveur web léger comme Nginx ou serve (Node.js) pour servir vos fichiers statiques. Voici la méthode la plus simple avec Nginx, adaptée pour une application front-end statique :
+
+on copie ds dockerfile
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
+((Ce Dockerfile utilise l'image officielle Nginx, copie tous vos fichiers dans le dossier par défaut de Nginx, et expose le port 80.))
+
+puis ds terminal 
+docker build -t mon-image .  :: ça crée une image
+docker run -p 8080:80 mon-image  :: Votre application sera alors accessible sur http://localhost:8080 depuis votre navigateur+++ ds docker > colonne port(s) on a 8080:80 et on clique à dte sur fleche
+
+voir aussi sites ::
+https://medium.com/@zul.m/deploying-a-static-html-site-with-docker-and-nginx-6f5bcdcbc650
+https://dev.to/omkara18/deploying-a-static-website-with-docker-a-comprehensive-guide-3gk
+
+
+CI/CD
+les workflows == outils pour verfications ou autre des fichiers
+on a rajouté workflow dockers pour que GitHub relance tjs docker
+
+merge ::: fusionner
+
+qd on a fait un build et 1 run pour un container et que ça ne marche pas port non dispo >> il faut stopper les containers qui sont sur le m^me port
+
+PORTS DISPOS ::: 3000 8000 80
+

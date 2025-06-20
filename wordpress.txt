@@ -1,0 +1,35 @@
+wordpress
+3p
+
+lien YOUTUBE
+https://www.youtube.com/@montreuilinvisible
+
+page accueil pas en lorem et mise en place SEO
+art. phare + 6 articles
+
+HEADER Pollution environnement Habitat A propos
+buttons rechercher / recevoir la newsletter
+P
+FOOTER button sign up/ s'abonner 
+contributors ?
+Montreuil Invisible © 2025
+
+
+utiliser des articles
+portfolio projets exposés --> articles projets 1, 2 ETC + chaque art. a son img de mise en avant
+ts les articles doivent etre présent sur accueil
+widjet porfolio avec articles les + récents
+si one page il faut une section portofolio avcec l'ens . des art.
+envoyer nom de domaine du site ou permalien
+ Panthéon.io.
+muriel.ehlinger@lepoles.org
+- **Identifiant** : lepoles
+- **Mot de passe** : azerty
+
+ extensions
+elementor
+SEO Rank Math
+SECU  SecuPress
+Performances   W3 Total Cache
+
+avec elementor et pro element aller sur chaque P et modifier le modele par défaut pour pouvoir créer le footer header EZTC > aller sur elementor canvas

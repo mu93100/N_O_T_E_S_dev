@@ -1,0 +1,55 @@
+portfolio
+extension chrome
+savee pour moodboard savee
+fonts ninja pour reconnaitre
+
+sites example
+https://www.awwwards.com/sites/broed
+nassuf sites pour meilleurs site 
+https://savee.it/ domestika 
+https://www.siteinspire.com/
+muzzli
+
+https://www.hostinger.fr/tutoriels/portfolio-developpeur-web#Comment_creer_un_portfolio_de_developpeur_web_efficace
+
+https://emuni.co.jp/
+https://bepatrickdavid.com/
+https://obake.blue/works/midnight-mission/
+https://www.lauren-waller.com/
+https://portfoliorecreationshubhamthedev.netlify.app/#home
+
+
+anim de dingue
+https://under-voyager.mikapikazo.info/
+anim 'entrée sur site avec ecriture :  https://www.benjamin-leveque.com/
+
+tendance de conception web brutaliste
+Texte brut
+Polices système
+Hyperliens soulignés
+Couleurs adaptées au web
+Monochromatisme
+Arrière-plans de couleur unie avec peu ou pas de décoration (donc pas de dégradés)
+Composants géométriques et arêtes vives
+Photographies non traitées — c’est-à-dire sans bordures, ombres, arrondis, etc.
+Navigation ouverte (par opposition aux menus déroulants ou hamburger)
+Lignes de séparation entre les sections
+Contenu présenté dans des tableaux
+Boutons avec contour
+https://elementor.com/blog/fr/quest-ce-que-le-brutalisme-en-design-web-et-comment-lutiliser-7-exemples-remarquables/#history
+
+menu
+<logo>[<navbar>travaux  about à propos contact ETC</navbar>]
+
+
+/works ++ lien GitHub
+
+projets : a chaque fois montrer problématique et technologies utilisées 
+
+Wappalyzer = extension chrome pour savoir quel frameworks language sont utilisés pour site
+
+about(profil)   skills  portfolio  experience
+
+blue
+#0000FF
+rgb(0,0,255)

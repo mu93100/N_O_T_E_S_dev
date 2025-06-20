@@ -1,0 +1,10 @@
+Media participatif
+Les fondateurs souhaitent ouvrir le site à des contributeurs occasionnels ou réguliers. Une idée, une info, une humeur : contactez la rédaction. Envie de participer : devenez contributeur.
+
+Media communautaire
+Abonnez vous et rejoingez une communauté cotoyenne préoccupée par les enjeux locaux, le respect de chacun, la lutte contre la pollution, les nuisances, le mal logement.
+
+Modèle économique
+Initialement créé et lancé grâce au bénévolat et au soutien de citoyens, Montreuil Invisible pourra recourir si nécessaire à des campagnes de dons et financements participatifs afin de rendre son service toujours plus performant.
+
+avec elementor et pro element aller sur chaque P et modifier le modele par défaut pour pouvoir créer le footer header EZTC > aller sur elementor canvas

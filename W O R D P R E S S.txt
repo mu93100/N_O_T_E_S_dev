@@ -1,0 +1,193 @@
+W O R D P R E S S 
+40% des sites/ grosse communauté si Questions
+wordpress c'est en php
+
+wordpress.org open source et gratuit
+après plugin payants puis .com version payante
+
+CMS : content management sytème : syst de gestion de contenu
+wordpress/ shopify/ wicks/ jumla/ square space/ hostiger avec IA …:::assister pour création de site
+différent niveau de maquette
+- zooning = layout mise en p
+header main footer side bar
++hero 
+CTA page de présentation rapide avec button CTA click to action
+- wireframe : permet d'avoir un truc ss coul/ on définit les Fonalités qu'on va utiliser
+- moke up
+- prototype : ex figma avec intéraction entre +sieurs p.
+permet démo
+
+serveur : ordi unité centrale qui permet du stockage de base de données
+serveur en ligne
+serveur en externe : hébergeur
+serveur local:  Xamp amp pour apache mysquel php
+Mamp pour macOS
+Xamp pour tout
+prendre version LTS = la version la +stable ou derniere version
+
+XAMPP on fait start pour apache et MySQL (on W en local)
+on active Filezilla si on W avec hébergeur
+
+ds XAMPP aller ds appli  htdocs (doss ou sont stockés ts les projets)
+> htdoc 
+>nommer un doss wordpress avec Nx nom
+> dans navigateur taper localhost/nom du projet
+nom de table = base de données
+
+pour vrai projet cocher search engine visibility
+
+faire TTES les MAJ wordpress MAIS faire attention aux bugsavec extensions créés suite MAJ FAIRE SAUVEGARDE
+
+pages accueil contact FAQ
+articles quand on a pleins de pages sur le même theme (attention TAG/etiquette
+
+medias : musique etc
+commentaires : pour gestion des comm
+
+apparence : theme très utilisé : astra kadence
+
+comptes/ users : attention ne pas donner pouvoir 
+
+
+ds réglages / permaliens : lien pour référencement / le + intéressant = titre de publication
+site statique : pages avec à chaque fois un lien URL diff
+site dynamique  : 1 seule p.
+
+navbar : on met le + important soit au début soit à la fin expérience utilisateur --> souvent Home sauf si home en clickant sur logo (choix)
+contact et button réserver super important aussi
+
+* fichier zip wordpress renommé au nom du projet
+doss à mettre dans htdoc pour Xampp www dans wamp et autre
+on crée  ds php my admin
+on c...
+…
+sur mac des fois identifiant =root root et non pas root
+
+
+on reprend nom du projet
+article
+
+titre +img de mise en avant = comme card  img puis titre en dessous = img qui va représenter l'article
+ex catégorie livres fantastiques
+etiquettes pour 1 auteur
+article pour 1 livre
+articles categorie etiquette => livresFantastiques ou livres_fantastiques
+
+choix du theme en amont car diff de changer après
+
+theme : on peut changer et aussi téléverser son propre theme
+
+apparence
+> menu
+on
+
+elemnentor constructeur de site web
+
+refaire son propre header(sur version crackée on ne peut pas utiliser les modeles)
+>ds tableau de bord wordpress
+>modele
+>theme Builder
+> header ou autre > enregistrer > mettre nom((((ou +)ajouter > aller sur n'importe quel header et  > add new fermer la fenetre biblio
+(((
+>publier>save and close pubblish setting> add cond
+modele ds elementor ds logo
+dans apparence > ttes les p. >aller sur 1 p > clicker sous la p modif rapide> modele>canevas elementor
+
+CREATION D4UN THEME ENFANT DE ASTRA 5+++PHOTOS°
+dans disque local>>>>astra
+créer un Nx doss astra-child
+on crée les fichiers css
+
+
+https://tinywow.com/
+
+
+créer un élément OU
+> aller ds p > modif ds elementror> on va sur logo > constructeur de theme
+
+OU on fait un élément ds 1 page
+
+element créé en vert si on modifie sur n'importe quelle p. ça modifie sur toutes les p.
+modifier un header par ex : aller sur chaque p 
+- on ouvre la p. et à droite on va ds modele on va ds canevas elementor
+- on va sur ttes les p. > survol d'une p. on va ds modifications
+
+installer extension w3 pour vider les caches
+
+hébergeur gratuit : https://pantheon.io/
+murielehlinger@gmail.com +Ki...
+
+site surPantheon MDPKikiki2r
+titre : projet_1
+identifiant : mu1
+MDP Kikiki2r*Rora2025
+Pinterest  : pleins de templates proposés
+
+extension elementor sur wordpress
+aller https://proelements.org/ pour version crackée elementor pro 
+en local sur disque local le mettre ds fichier projet wamp>www>projet_horizon> wp-content> pluggin
+sinon sur pantheon hébergeur> extensions> ajouter une ext (en haut)> téléverser une ext (en haut ou mil
+elementor mu le poles Ki…
+
+charger Template depuis proelements
+>Template > kit Library > à Gche kits by plan > free > choisir 1 Template Apply kit
+EXTENSIONS INDISPENSABLES :
+securité
+Wer le réf
+ext pour nettoyer le cache
+att ne pas surcharger les extensions car poss de conflits
+contact form pour créer un form
+mainship
+cache LiteSpeed Cache ou W3
+seo (référencement) rankmath activer extension en allant dedans puis skip to
+suivre traffic visiteurs : google site kit
+des hébergeurs peuvent provider des extensions
+secuPress on scanne le site
+
+pour formulaires trouver
+https://mailchimp.com/fr/landers/email-marketing-platform/?ds_c=DEPT_AOC_Google_Search_ROW_FR_Brand_Acquire_Omega_NE_T3&ds_kids=p78376259677&ds_a_lid=kwd-86794498723&ds_cid=71700000115521553&ds_agid=58700008587231448&gad_source=1&gclid=EAIaIQobChMI1rbioJTkiwMVTzkGAB3sMh_NEAAYASAAEgLRZfD_BwE&gclsrc=aw.ds
+
+référencement 60 70% = interressant
+
+faire un form depuis wordpress
+contact (extension)
+copier code dans widget shortcode
+
+cartes : attention pas pleine largeur sinon on ne ^peut plus sortie  de la carte
+aller ds google maps >partager>intégrer une carte>copier le contenu html
+short code > coller> apply
+
+ATTEINDRE WIDGET le + au mil du container
+
+
+avec wordpress.com wordpress gere l'hebergement et ttes nos données
+avec wordpress.org on dit trouver un hébergeur
+
+widget : elements et fonctionalités
+permalien 
+pluggin de sauvegarde à revoir ds exercice
+
+Quelle est la première étape lors de la création de pages sur WordPress ?
+1 créer et orga les p
+Créer et organiser les pages via le tableau de bord.
+2 aller ds elementor ETC
+
+aller voir ACF
+ex site concessionnaire voiture renommer des Fonalités ex voitures jantes, qui vont parler au client si on lui laisse la main sur certains aspects.
+A T T E N T I O N
+sur fichierstyle.css 
+comm de ligne 1 à 7: SUPER IMPORTANT POUR lier theme principal à theme CHD
+/* 
+Thème name: Astra Child
+description: thème enfant pour Astra
+Author: L2r015
+Template: Astra
+Version:1.0.0
+*/
+
+plugg in : regarder pour mise à jour récente et nb de téléchargement
+pour faire site en 2 min BOLT et reW avec CLQAUDE
+
+création contenu wordpress sur tyler.com
+
+
