@@ -1,0 +1,19 @@
+Je suis passionnée par le développement web et j’aime apprendre de nouvelles technologies comme Symfony.
+
+J’ai un parcours créatif en graphisme et animation d’ateliers, et j’aime beaucoup travailler en équipe.
+
+Curieuse et organisée, je m’intéresse aussi aux projets qui ont du sens et qui apportent quelque chose aux autres.
+
+----
+"J'ai un parcours créatif de 20 ans dans la mode et le graphisme, et je me forme maintenant au développement web."
+"Je connais les bases de la programmation et du framework Symfony, avec une approche visuelle qui vient de mon expérience en design."
+"J'aime le travail en équipe et j'ai une bonne expérience de l'organisation, notamment dans le milieu associatif."
+
+----
+Je suis une professionnelle polyvalente avec une formation en graphisme et une expérience entrepreneuriale de plus de 20 ans, actuellement en reconversion vers le développement web avec des compétences en programmation et framework Symfony."
+"Mon parcours créatif dans la mode, le graphisme et le design m'a donné une approche visuelle et utilisateur précieuse, que je souhaite maintenant appliquer au développement web dans une équipe dynamique."
+"Passionnée par les nouvelles technologies et l'économie sociale et solidaire, je recherche un stage qui me permettra de mettre en pratique mes compétences techniques tout en contribuant à des projets web innovants."
+
+----------
+"Après 20 ans dans la création (mode, graphisme), je me lance dans le développement web avec des bases en programmation et Symfony."
+"Mon expérience créative me donne un bon œil pour l'interface utilisateur, et j'aimerais maintenant apprendre le côté technique du web."

@@ -1,0 +1,49 @@
+exo PHP
+
+
+<!-- 
+créer une nav avec les liens des différentes des pages (boucler $menu avec foreach ou for voir doc) 
+1--si $user existe et non vide et son rôle est user alors afficher lien profil 
+2--si rôle est admin affiche lien de user et backoffice
+
+3--Si il y a une photo dans $user alors afficher la photo dans header sinon afficher image par default,
+4--dans header si users existe afficher bouton déconnexion sinon bouton connexion
+Dans header dire « dire bonjour et nom user »
+5--avec javascript et css faire le responsive du menu : en mobile des bar horizontal s’affichent et au click le menu s’affiche
+
+6--dans home boucler les produits avec foreach ( voir cour poleS ou doc internet)  
+ou alors les afficher manuellement dans des card
+
+7--dans profil afficher les infos du user
+
+$user=[
+    "id"=> 1233,
+    "name_username"=>"Nassaf",
+    "email"=>"nassaf@gmail.com",
+    "role"=>"admin",
+    "image"=>"votre adresse photo"
+];
+ 
+$menu=["home","profil","backoffice"];
+ 
+$produit=[
+    [
+        "name"=>"ordinateur",
+        "prix"=>1000,
+        "category"=>"informatique"
+    ],
+    [
+        "name"=>"chaise",
+        "prix"=>3000,
+        "category"=>"meubles"
+    ],
+    [
+        "name"=>"chaussures",
+        "prix"=>20,
+        "category"=>"vêtements"
+    ]
+];
+
+
+
+

@@ -1,0 +1,25 @@
+Symfony 2 /// PAS FINI
+
+* OPTIONS POSSIBLES POUR CHAQUE CHAMP (dans la méthode add):
+* - label : personnaliser le texte du label (ex : 'Nom complet')
+* - required : true/false pour rendre le champ obligatoire ou non
+* - attr : tableau des attributs HTML (ex : placeholder, class, maxlength...)
+* - label_attr : attributs HTML appliqués au label
+* - row_attr : attributs HTML appliqués au conteneur du champ
+* - mapped : true/false (indique si le champ est lié à l'entité)
+* - constraints : tableau de contraintes de validation (voir ci-dessous)
+* - help : texte d'aide affiché sous le champ
+* - data : valeur préremplie
+* - empty_data : valeur par défaut si rien n'est saisi
+
+* CONTRAINTES POSSIBLES (Symfony\Component\Validator\Constraints):
+* - NotBlank : le champ ne doit pas être vide
+* - Length : définir une longueur min/max (avec messages personnalisés)
+* - Email : vérifier le format email
+* - Regex : valider selon un motif regex (ex : chiffres uniquement)
+* - Choice : la valeur doit faire partie d'une liste définie
+* - IsTrue / IsFalse : spécialement pour les cases à cocher
+* - Url : vérifier un format d'URL
+* - EqualTo / NotEqualTo : vérifier que la valeur est (ou n'est pas) égale à une autre
+* - Callback : logique de validation personnalisée (via une fonction)
+*/

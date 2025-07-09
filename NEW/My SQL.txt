@@ -1,0 +1,56 @@
+My SQL
+charger extension markdown preview enhanced
+
+clés primaires et secondaires
+clé1=1ere champ : ID en Gal /liée à clé2 : un autre champs d'une autre table
+
+mongo DB data base
+SELECT colonne, colonne, colonne
+FROM table
+WHERE conditions
+
+revenir au code SQL
+> aller  sur éditer en ligne 
+DANS  Profilage [ Éditer en ligne ] [ Éditer ] [ Expliquer SQL ] [ Créer le code source PHP ] [ Actualiser ]
+
+3.5 Utilisation de GROUP BY et HAVING
+La clause GROUP BY permet de regrouper les enregistrements ayant la même valeur dans une colonne. La clause HAVING permet de filtrer les résultats d'une requête GROUP BY.
+
+-- Récupérer le nombre de clients par ville
+SELECT ville, COUNT(*) AS nombre_clients
+FROM clients
+GROUP BY ville;
+
+-- Récupérer les villes ayant plus de 10 clients
+SELECT ville, COUNT(*) AS nombre_clients
+FROM clients
+GROUP BY ville
+HAVING COUNT(*) > 10;
+3.6 Utilisation de DISTINCT
+L'opérateur DISTINCT permet de supprimer les doublons des résultats d'une requête.
+
+-- Récupérer les villes des clients
+SELECT ville
+FROM clients;
+
+-- Récupérer les villes des clients (sans doublons)
+SELECT DISTINCT ville
+FROM clients;
+3.7 Utilisation de AS
+L'opérateur AS permet de renommer une colonne ou une table dans une requête.
+
+-- Récupérer les villes des clients (avec un alias)
+SELECT DISTINCT ville AS ville_client
+FROM clients;
+
+https://www.codewars.com/ EXERCICES A FAIRE
+wordpress wooshop très lourd 
+shopify et presta shop beaucoup mieux
+
+outils
+MCD dessin
+escalidrawn
+miro
+
+
+QUAND ERREUR pour éxé création e tables etc ::: clé trop longue, max  1000 --> modifier longueur des VARCHAR

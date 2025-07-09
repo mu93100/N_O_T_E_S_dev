@@ -1,0 +1,133 @@
+# Commandes utiles Symfony – Récapitulatif
+
+SANS CLONE DE DOSS FACUNDO
+
+TOUT S'ECRIT DS TERMINAL
+
+pour commencer en clonant un doss de facundo
+4)-    php bin/console doctrine:database:create
+5)-    php bin/console make:migration
+6)-    php bin/console doctrine:migrations:migrate
+1)-    symfony serve -d
+2)-    symfony serve
+3)-    composer install
+
+
+=======================
+GÉNÉRATION DE BASE
+=======================
+
+Créer un projet Symfony :
+symfony new nom_projet --webapp
+
+Démarrer le serveur local :
+symfony serve
+symfony serve -d         # en arrière-plan
+symfony open:local       # ouvre le navigateur (((ou on clik sur url ds rectangle vert http://127.0.0.1:8001)
+
+Vérifier config :
+symfony check:requirements
+
+
+=======================
+CONSOLE SYMFONY
+=======================
+
+Afficher toutes les commandes :
+php bin/console
+
+Lister les routes :
+php bin/console debug:router
+
+Lister les services :
+php bin/console debug:container
+
+Vider le cache :
+php bin/console cache:clear
+
+Voir la version de Symfony :
+php bin/console --version
+
+
+=======================
+GÉNÉRATION DE CODE
+=======================
+
+Créer un contrôleur :
+php bin/console make:controller NomController
+
+Créer une entité (produits):
+php bin/console make:entity
+
+Créer une migration :
+php bin/console make:migration
+
+Appliquer une migration :
+php bin/console doctrine:migrations:migrate
+
+Créer un formulaire :
+php bin/console make:form NomType
+
+Créer un système d’auth :
+php bin/console make:auth
+
+Créer un utilisateur : MU  !!! CREER UNE TABLE USER AVEC ROLE ET password_hashers +++ pour pouvoir créer le form de LOGIN)
+
+php bin/console make:user
+
+Créer une interface CRUD :
+php bin/console make:crud Nom
+
+
+=======================
+DOCTRINE
+=======================
+
+Créer la base de données :
+php bin/console doctrine:database:create
+
+Voir les entités :
+php bin/console doctrine:mapping:info
+
+Mise à jour schéma (à éviter en prod) :
+php bin/console doctrine:schema:update --force
+
+Exécuter une requête SQL :
+php bin/console doctrine:query:sql 'SELECT * FROM user'
+
+Drop la base (⚠️ destructif) :
+php bin/console doctrine:database:drop --force
+
+
+=======================
+SÉCURITÉ
+=======================
+
+Créer un authenticator :
+php bin/console make:auth
+
+Créer un utilisateur :
+php bin/console make:user
+
+Créer un contrôleur de login :
+php bin/console make:controller SecurityController
+
+
+=======================
+DIVERS & DEBUG
+=======================
+
+Créer un service :
+Créer un fichier dans src/Service/ et Symfony le détecte automatiquement
+
+Lister les commandes disponibles :
+php bin/console list
+
+Voir la config d’un service :
+php bin/console debug:container App\Service\TonService
+
+Voir les routes :
+php bin/console debug:router
+
+Tester la BDD :
+php bin/console doctrine:query:sql 'SELECT NOW()'
