@@ -1,4 +1,0 @@
- IA cursor à télécharger et on W dessus cô sur VScode
-https://www.cursor.com/
-
-on fait un prompt et on copiecolle
