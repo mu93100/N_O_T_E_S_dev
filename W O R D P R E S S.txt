@@ -117,8 +117,8 @@ installer extension w3 pour vider les caches
 hébergeur gratuit : https://pantheon.io/
 murielehlinger@gmail.com +Ki...
 
-site surPantheon MDPKikiki2r
-titre : projet_1
+site surPantheon ((MDPKikiki2r))
+titre : projet_1 (essai avant montreuil invisible) (+ montreuil inv.)
 identifiant : mu1
 MDP Kikiki2r*Rora2025
 Pinterest  : pleins de templates proposés
@@ -191,3 +191,12 @@ pour faire site en 2 min BOLT et reW avec CLQAUDE
 création contenu wordpress sur tyler.com
 
 
+RETROUVER WORDPRESS POUR RE-W LE SITE 
+=> aller sur adresse pantheon EN RAJOUTANT /wp-admin/ 
+https://dev-murielepoles.pantheonsite.io/wp-admin/
+s'identifier **Identifiant** : lepoles
+	     **Mot de passe** : azerty
+
+sur pantheon 2 comptes 
+muriel.ehlinger@lepoles.org
+L2r015 Kiki..

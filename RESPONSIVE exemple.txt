@@ -1,4 +1,4 @@
-RESPONSIVE exemple
+RESPONSIVE exemple   1 CM ===96 pixels
 Mobile (jusqu'à 767px) :
 flex-direction: column → cards empilées verticalement
 align-items: center → cards centrées

@@ -1,0 +1,34 @@
+
+Comment rendre mon application accessible à d'autres personnes sur Internet
+
+
+Pour rendre ton application accessible à d'autres personnes sur Internet, il est nécessaire de la déployer sur un serveur en ligne et de s'assurer que ce serveur est accessible publiquement. Voici les étapes essentielles :
+
+Choisir un hébergement adapté
+Il te faut un hébergeur compatible avec PHP, par exemple OVH, AlwaysData, 000webhost, IONOS ou un VPS personnel. Les services comme GitHub Pages ne prennent pas en charge PHP.
+
+Uploader tes fichiers sur le serveur
+Utilise un client FTP (comme FileZilla) ou un dépôt Git pour transférer les fichiers de ton application (y compris index.php, tes scripts PHP, le CSS et les images) vers le dossier web de ton hébergement (généralement nommé www ou public_html).
+
+Obtenir et utiliser une adresse publique (nom de domaine ou IP)
+Ton serveur doit avoir une adresse IP publique ou, idéalement, un nom de domaine (comme mondomaine.fr). Tu peux en acheter un ou utiliser celui fourni par ton hébergeur.
+
+Configurer les ports (si tu as un serveur dédié ou VPS)
+Si tu es derrière une box ou un routeur, il faudra rediriger le port 80 (HTTP) (ou 443 pour HTTPS) vers l’IP privée de ton serveur sur ton réseau local.
+
+Vérifier l’accessibilité depuis l’extérieur
+Teste en te connectant à ton site depuis un autre réseau ou en demandant à quelqu’un d’essayer depuis l’extérieur.
+L’adresse à partager est généralement http://ton-domaine.com/index.php (ou simplement http://ton-domaine.com si index.php est la page par défaut).
+
+Résumé :
+
+Héberge le projet sur un serveur web en ligne compatible PHP.
+
+Transfère les fichiers par FTP ou Git.
+
+Utilise une adresse publique.
+
+Assure la redirection de port si besoin et partage l’URL à tes contacts.
+
+Si tu testes en local uniquement ("localhost"), ce n’est pas accessible aux autres personnes — il faut obligatoirement un hébergement accessible sur Internet.
+

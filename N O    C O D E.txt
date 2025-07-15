@@ -15,7 +15,7 @@ aller ds action > on click sur action ds Item on click  +> on  choisit le table 
 form : 
 hebergement fr ou euro mieux que US
 
-ZAPIER (muriel.ehlinger@lepoles.org mdp Rora2025!nisou)
+ZAPIER (muriel.ehlinger@lepoles.org mdp Rora2025!Rora2025!)
 zappier 100 taches / mois = 1 module = 1 envoi a 1 adresse
 notion super interressant
 
@@ -85,3 +85,13 @@ ID faire 1er champ Formule avec formule record ID OU id et numerotation auto
 ligne de comm et commandes => toujours mettre 2eme champ liaison à commandes ou ligne de comm
 
 formulaire ds airtabme => pour que des personnes puissent ecrire des choses intervenir ds airtabl sans etre inscrite ss payer 
+
+
+
+
+Hello @user_name,
+
+B I E N V E N U E dans la grande famille AirBNzik 
+
+Cliquez sur ce lien pour vous connecter :
+@invitation_link

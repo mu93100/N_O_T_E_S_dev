@@ -1,0 +1,184 @@
+N O    C O D E
+
+AIR TABLE (muriel.ehlinger@lepoles.org mdp Ki ou Rora2025!)
+
+https://contournement.notion.site/Ressources-Pole-S-1a86c0386665806a83f7c56f0c11be72
+
+
+
+https://outilsnocode.com/
+
+
+
+
+
+
+
+
+
+kanban orga en col.
+
+
+
+SOFTR (muriel.ehlinger@lepoles.org mdp Rora2025!)
+
+bloc statique
+
+bloc dynamique : relié à base de données air table / qd le contenu air table change => ça change ds bloc dynamique SOFTR
+
+modifier style du site à Gche >theme (pour Gal) / à Dte
+
+
+
+à Dte > ds content >secondary section > décocher click to expand > decocher secondary section
+
+aller ds action > on click sur action ds Item on click  +> on  choisit le table  => les cards se mettent en liste ds p offres de loc
+
+
+
+form : 
+
+hebergement fr ou euro mieux que US
+
+
+
+ZAPIER (muriel.ehlinger@lepoles.org mdp Rora2025!Rora2025!)
+
+zappier 100 taches / mois = 1 module = 1 envoi a 1 adresse
+
+notion super interressant
+
+
+
+1er champ = clé elemnetaire => souvent email
+
+table annonce - table utilisateur
+
+Whimsical pour schéma projets
+
+
+
+airtable créer une table= démarrer de zéro
+
+
+
+lier à une autre entrée : il prend le 1er champ
+
+calcul ds même champ : formul ?
+
+calcul ds autre champ : cumul
+
+
+
+visibility 
+
+non loggin users : par ex button se connecter = pas nécessaire
+
+current record : infos qu'on est en train de regarder
+
+filter : toujours par 1er champs
+
+
+
+le / === dynamic
+
+
+
+champ recherche : pour récup de la donnée (ex récupérer les N° de tél)
+
+
+
+champ cumul = pour formules de calcul
+
+champ Qté =  pour add / très simple
+
+
+
+fichier excell > telecharger en eXel > importer  ca importe +sieurs tav$bles et vérif les types de champs
+
+
+
+FORMULE / calcul à partir d'une même ligne= sur 1 seule ligne /pas d'a
+
+
+
+calculs sur airtable: https://support.airtable.com/docs/calculations-using-the-formula-field-overview
+
+
+
+nb = #numéro ds 
+
+
+
+regarder formatage affichage) date 
+
+champ de type recherche = click droit > ajout d'un champ de type recherche 
+
+
+
+nx champ Lier à une autre entrée "comm"
+
+> Autoriser l’établissement d’un lien vers plusieurs entrées
+
+décocher quand lié à 1 seul entrée "comm"
+
+
+
+IA
+
+https://chatgpt.com/gpts //gratuit
+
+peut generer une explication simple de airtable
+
+on lui parle comme à un CHD de 12 ans
+
+chat GPT fait des prompts
+
+en version payante tu peux créer des assistants (aide en math, pour airtable...)
+
+limiter la réponse car token (=4,5 lettres)  sont payants si utilisé avec Zappier
+
+
+
+
+
+zappier pour Nlle ligne : new record = Nlle entrée ds table
+
+pour rentrer une info dynamique ds ZAPPIER on fait /, et ça ouvre
+
+
+
+send a prompt ou conversation
+
+
+
+L'importance de la transparence dans l'industrie textile 
+
+Comment le choix des matériaux peut impacter l'éthique de la mode
+
+Réinventer la mode : Le rôle de la circularité dans un futur textile durable
+
+Au cœur de la couture : L'importance des droits des travailleurs dans l'industrie textile
+
+"Fast fashion, coût caché : Comprendre l'impact environnemental de la Fast Fashion
+
+
+
+CRM = carnet d'adresse
+
+
+
+extension ds AIRTABLE pour visualiser les tables avec champs et liaisons
+
+
+
+ID faire 1er champ Formule avec formule record ID OU id et numerotation auto
+
+
+
+ligne de comm et commandes => toujours mettre 2eme champ liaison à commandes ou ligne de comm
+
+
+
+formulaire ds airtable => pour que des personnes puissent ecrire des choses intervenir ds airtabl sans etre inscrite ss payer 
+

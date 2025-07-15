@@ -6,6 +6,11 @@ Tablettes (portrait/paysage)	601 – 991	@media (min-width: 600px)
 Tablettes (paysage)		≥ 768	@media (min-width: 768px)
 Laptops / Desktops		≥ 992	@media (min-width: 992px)
 Grands écrans			≥ 1200	@media (min-width: 1200px)
+
+300px = 7.9375
+600px = 15.875cm
+1200px = 31.75cm
+1200px = 37.0416cm
 Bonnes pratiques
 Mobile-first : Écrire d’abord les styles pour mobile, puis ajouter des media queries avec min-width pour les écrans plus larges.
 
