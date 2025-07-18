@@ -1,0 +1,10 @@
+Bootstrap 12 col
+
+classes
+col-sm- : largeur colonne mobile
+col-md- : largeur colonne tablette ordi
+class="col-md-' mx auto" col occupe 4/12 de la largeur sur écrans taille moy md, soit > 768px
+sur écrans photo
+
+class= container-fluid => fait 100% de l'écran
+class= container => centré avec marge mt-5

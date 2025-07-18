@@ -1,0 +1,43 @@
+PHP
+
+importer le doss cours
+> ce PC
+> disque local
+> wamp64
+> www
+
+chemin oeut s'écrire cô ça :::
+C:\wamp64\www
+click Dt > afficher d'autres options > ouvrir GIT BASH here
+ds terminal > git clone URL (copié ds 
+
+http://localhost/
+puis rajouter /php_cours_pole_S (copié collé d'un dossier de projet)
+
+extension a essayer = PHP debug
+PHP server pour pouvoir afficher directement la page et ne pas passer par localhost ETC
+
+mettre header footer sur chaque page du site : include_once/ si ça marche pas include
+
+site avec un index
+rajouter ça pour rediriger vers home
+<?php header("Location: pages/home.php"); ?>
+
+boucler un tableau = parcourir les elements d'un tableau par index
+pour menu avec foreach/ si balise home existe
+
+Fonction array_key_exists("clé", $tab) --> vérifier qu'une clé existe
+ $tab=["clé", "clé2", "clé3"]
+équivalent à isset
+
+alternative à mettre du html ds php --> PHP : ?> PHP
+                if (array_key_exists("image", $user)) : ?>
+ 
+                    <img src="<?php echo $user["image"]  ?>" alt="">
+ 
+            <?php endif;
+
+
+ 
+
+

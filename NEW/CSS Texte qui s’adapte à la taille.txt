@@ -1,0 +1,51 @@
+CSS Texte qui s’adapte à la taille de la div
+  
+<div class="ma-div" style="width: 50vw;
+  height: 200px;
+  border: 1px solid #333;
+  container-type: inline-size;">
+  <span style="font-size: 10cqw;">Texte qui s’adapte à la taille de la div</span>
+</div>
+
+---------------------------------
+font-size: clamp(minimum, idéal, maximum);
+
+.ma-div {
+  container-type: inline-size; /* active le contexte de conteneur */
+  font-size: clamp(1rem, 10cqw, 3rem);
+}
+Ici, la taille de la police sera au minimum 1rem, au maximum 3rem, et variera de façon fluide avec 10% de la largeur du conteneur (10cqw).
+---------------------------------
+Le meilleur format d’image à utiliser sur un site web dépend du type d’image et de l’usage :
+
+Format	Idéal pour	Avantages	Inconvénients
+SVG	Logos, icônes, graphiques vectoriels	Résolution illimitée, poids très léger, redimensionnable sans perte, parfait pour le responsive	Pas adapté aux photos ou images très détaillées
+PNG	Images avec transparence, illustrations détaillées, captures d’écran	Excellente qualité, gère la transparence, non destructeur	Fichiers souvent lourds, moins adapté aux photos volumineuses
+JPG/JPEG	Photographies, images complexes avec beaucoup de couleurs	Compression efficace, fichiers légers, très compatible	Compression avec perte (qualité dégradée si trop compressé), pas de transparence
+Recommandations pratiques
+Logos, pictogrammes, icônes, illustrations simples :
+SVG est le meilleur choix. Il reste net à toutes les tailles, se charge rapidement et s’intègre parfaitement dans le design responsive.
+
+Images détaillées, illustrations complexes, captures d’écran :
+PNG est recommandé si tu as besoin de transparence ou de détails fins.
+
+Photographies :
+JPG/JPEG est le plus adapté pour les photos grâce à sa compression efficace et son universalité.
+
+Optimisation avancée :
+Pour des performances maximales, tu peux aussi envisager WebP (plus léger que PNG/JPG et compatible avec la plupart des navigateurs modernes, sauf certains Safari).
+
+Astuce
+Toujours optimiser la taille de tes images avant de les intégrer (outils comme TinyPNG, Squoosh, etc.).
+
+Test différents formats pour trouver le meilleur compromis entre qualité visuelle et rapidité de chargement.
+
+En résumé :
+
+SVG pour les éléments graphiques vectoriels (logos, icônes)
+
+PNG pour les images avec transparence ou détails fins
+
+JPG pour les photos
+
+WebP si tu veux optimiser au maximum le poids et la rapidité, en vérifiant la compatibilité navigateur.

@@ -1,0 +1,10 @@
+cours FACUNDO TOTAL
+version beta (bug possible, css non parfait ect... ). le contenu sera régulièrement  ajoiuté ( les cours web  html css javascript php ....) .  ceci est un pense bête qui j'espère pourra vous aider à revoir toutes les notions vus durant ce cursus... 
+
+https://cours2facu.varascundo.com/login  
+muriel
+Rora2025!
+
+code php+js du projet ici ( code non mis au propre et pas encore optimisé) :  https://github.com/PoleS-dev/vue-symfony
+Connexion
+ 

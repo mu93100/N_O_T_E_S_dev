@@ -1,0 +1,41 @@
+NO CODE AIRBnzik
+
+I N S C R I P T I O N
+En vous inscrivant, vous acceptez nos conditions générales et notre politique de confidentialité. 
+
+Vous avez déjà un compte ?
+Se connecter
+
+Cet email est déjà rattaché à un compte
+
+Email non conforme
+
+ j'ai noté force et douceuroici les questions concernant le logo BOUHRARA :  
+- nom de marque proche de la marque existante Bouhrala
+- date de rendu
+- confirmation de la gamme des produits : haut de gamme, qualitaif, bio, chers
+- photo des packagings
+- plus d'éléments définissant le produit : univers visé (marques dont l'univers graphique plait à la cliente), visuels inspirants, la petite histoire de la marque..
+J'ai noté force et douceur : faut il aller vers du féminin ?
+
+Contact
+Plan du site
+Mentions légales
+Accessibilité : non conforme
+Politiques de confidentialité
+Gestion des cookies
+Horaires
+
+M E R C I 
+violet #240AFD
+mauve #8A84FD
+#F4F2FE font color
+formulaire
+fields/border 4 -police inter size M
+roundness 3
+Display fields/
+Headings/font violet size M
+text/font violet size M
+buttons/ size M- roundness 3- position mil - inter semi bold
+primary button/ #F4F2FE font color- backgroung violet
+secondary button/ blanc font color- backgroung violet

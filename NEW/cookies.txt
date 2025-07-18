@@ -1,0 +1,40 @@
+cookies
+<input type="text" name="nom" value="<?php echo isset($_COOKIE['cookie_name']) ? htmlspecialchars($_COOKIE['cookie_name']) : '';?>">
+🧠 Explication en 4 parties :
+1. isset($_COOKIE['cookie_name'])
+✅ On vérifie si le cookie nommé cookie_name existe.
+
+2. ? ... : ...
+C’est un opérateur ternaire : une façon courte d’écrire un if / else.
+
+Si le cookie existe → on utilise sa valeur.
+
+Sinon → on met un champ vide ('').
+
+3. htmlspecialchars($_COOKIE['cookie_name'])
+On protège le contenu du cookie pour éviter les failles XSS (injections HTML/JS dans la page).
+
+4. value="..." dans un <input>
+C’est la valeur pré-remplie dans le champ texte.
+
+✅ Ce que ça fait concrètement :
+Si tu as un cookie avec une valeur genre :
+
+php
+Copier
+Modifier
+setcookie('cookie_name', 'Dupont');
+Alors quand tu recharges la page, ton champ sera rempli automatiquement avec :
+
+html
+Copier
+Modifier
+<input type="text" name="nom" value="Dupont">
+Sinon, si le cookie n’existe pas, le champ sera vide :
+
+html
+Copier
+Modifier
+<input type="text" name="nom" value="">
+🧁 En résumé :
+C’est un champ texte qui pré-remplit automatiquement la valeur depuis un cookie, si ce cookie existe.

@@ -1,0 +1,3 @@
+p o l i c e
+police non-supportée par certains navigateurs mobile (comme "Rubik Beastly" ou "Coiny")
+ casser le rendu du texte (affichage vide ou réduit à rien)

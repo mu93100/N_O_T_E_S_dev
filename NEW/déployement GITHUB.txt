@@ -1,0 +1,4 @@
+déployement GITHUB
+Où est ton index.html ?		Que choisir dans GitHub Pages ?
+À la racine du dépôt		/ (root)
+Dans un dossier docs		/docs
