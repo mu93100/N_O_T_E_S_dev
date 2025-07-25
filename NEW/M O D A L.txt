@@ -1,0 +1,33 @@
+M O D A L 25/07
+
+          <div class="nav">
+            <ul>
+              <li><a href="#portfolio" class="nav-link">portfolio</a></li> <!--#truc === on scroll jusqu'à id ="truc"-->
+              <li><a id="cv" class="nav-link openModalCvBtn" role="button" data-img="./img/cv.jpg">CV</a></li>
+              <li><a id="afficher_a_propos" class="nav-link">à propos</a></li>
+              <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+          </div>
+
+      <div class="container_mobile">   
+        <div class="nav_mobile">
+            <ul>
+              <li class="portfolio green2"><a href="#portfolio" class="nav-link">portfolio</a></li>
+              <li><a id="cv" class="nav-link openModalCvBtn green1" role="button" data-img="./img/cv.jpg">CV</a></li>
+              <li class="contact green"><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </div>
+      </div>
+
+
+      <div class="modalCv" style="display:none;">
+        <img id="modalImgCv" src="" alt="C V">
+        <div class="closeModalCvBtn"></div>
+      </div>
+
+25/07 modales qui ne marchent pas RECTIFS
+CSS
+    display: flex;
+        /* display: block; */
+    } 
+ISO    display: block;  PARTOUT? PAS QUE SUR ELEMENTS MODAL
